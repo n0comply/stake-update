@@ -18,7 +18,7 @@ Setting up Google API and keys to communicate with Sheets
 
 2. Download from github using the following command:
 
-   gitclone https://github.com/n0comply/stake-update.git
+   git clone https://github.com/n0comply/stake-update.git
 
 3. Run the following command:
   
