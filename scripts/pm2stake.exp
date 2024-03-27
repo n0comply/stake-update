@@ -1,7 +1,7 @@
 #!/usr/bin/expect
 
 # Set the log file path
-set log_file_path "/root/logs/output.log"
+set log_file_path "/root/stake-update/logs/output.log"
 
 # Function to open the log file in write mode and write the stake value
 proc log_stake {stake_value} {
