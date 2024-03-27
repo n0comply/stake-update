@@ -1,3 +1,4 @@
+sudo apt install expect
 cd /root/stake-update/
 mkdir logs
 cd /root/stake-update/scripts &&
