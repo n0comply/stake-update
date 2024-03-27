@@ -16,7 +16,11 @@ Setting up Google API and keys to communicate with Sheets
 
 	replacing the capitals with the local file path and IP address of your virtual machine
 
-2. Download from github
+2. Download from github using the following command:
+
+   gitclone https://github.com/n0comply/stake-update.git
+
+3. cd stake-update and run mover.sh
 
 # Configuring the Sheets API
 
