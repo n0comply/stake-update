@@ -3,7 +3,7 @@ from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 
 # Log file path
-log_file_path = "/root/logs/output.log"
+log_file_path = "/root/stake-update/logs/output.log"
 
 # Function to extract stake amounts from the log file
 def extract_stake_amounts(log_file_path):
