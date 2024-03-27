@@ -22,7 +22,7 @@ Setting up Google API and keys to communicate with Sheets
 
 3. Run the following command:
   
-   cd stake-update && chmod +x mover.sh && ./mover.sh
+   cd stake-update && chmod +x install.sh
 
 # Configuring the Sheets API
 
