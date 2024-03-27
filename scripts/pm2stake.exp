@@ -1,0 +1,33 @@
+#!/usr/bin/expect
+
+# Set the log file path
+set log_file_path "/root/logs/output.log"
+
+# Function to open the log file in write mode and write the stake value
+proc log_stake {stake_value} {
+    global log_file_path
+
+    # Open the log file in write mode
+    set file_id [open $log_file_path "w"]
+    
+    # Write the "Stake:" string and its value to the file
+    puts $file_id "Stake: $stake_value"
+    
+    # Close the file
+    close $file_id
+}
+
+# Spawn the pm2 logs process
+spawn pm2 logs
+
+# Continuous monitoring and logging
+while {1} {
+    # Adjust the pattern to match "Stake:" followed by one or more digits/periods
+    expect -re {Stake: ([0-9\.]+)} {
+        # Extract the captured stake value and log it
+        log_stake $expect_out(1,string)
+    }
+
+    # Here you can add conditions or controls for breaking out of the loop
+}
+
