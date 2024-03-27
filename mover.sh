@@ -1,1 +1,1 @@
-mv /stake-update/* / && mv /stake-update/.gitignore / && rm -rf /stake-update
+mv /root/stake-update/* / && / && rm -rf /stake-update
