@@ -20,7 +20,9 @@ Setting up Google API and keys to communicate with Sheets
 
    gitclone https://github.com/n0comply/stake-update.git
 
-3. cd stake-update and run mover.sh
+3. Run the following command:
+  
+   cd stake-update && chmod +x mover.sh && ./mover.sh
 
 # Configuring the Sheets API
 
